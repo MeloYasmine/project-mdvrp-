@@ -1,0 +1,278 @@
+# parametros
+# fração máxima de distribuição de clientes entre depósitos
+FRAC_MAX_DISTRIBUTION = 100
+GEN = 200  # número de gerações
+GEN_NO_EVOL = 30  # número permitido de gerações sem mudanças
+SP = 2  # pressão seletiva para linear ranking
+N_REPETITIONS = 10
+TIME_TOTAL = 180  # 3600 tempo em segundos
+TIME_GEN = 60  # 360 tempo em segundos / tempo máximo em cada geracao
+TIME_POP = 30
+IT_ILS = 10
+IT_ILSA = 10000
+
+
+
+
+# 0 expression(s) specifying forbidden configurations read from '/media/fabiana/Dados/Documentos/Dropbox/ProjetoPesquisa-MDVRP/MDVRP-Fabiana/MDVRP/irace/forbidden.txt'
+# Read 1 configuration(s) from file '/media/fabiana/Dados/Documentos/Dropbox/ProjetoPesquisa-MDVRP/MDVRP-Fabiana/MDVRP/irace/configuration.txt'
+# 2021-07-25 18:28:23 -03: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 5
+# minNbSurvival: 5
+# nbParameters: 9
+# seed: 770479936
+# confidence level: 0.95
+# budget: 300
+# mu: 5
+# deterministic: FALSE
+
+# 2021-07-25 18:28:23 -03: Iteration 1 of 5
+# experimentsUsedSoFar: 0
+# remainingBudget: 300
+# currentBudget: 60
+# nbConfigurations: 10
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|         10|          1|    463709.3364|         10|00:39:21|   NA|  NA|    NA|
+|x|          2|         10|          1|    232177.1268|         20|00:28:01|-0.55|0.22|1.1796|
+|x|          3|         10|          3|    303536.5187|         30|00:40:51|-0.15|0.23|0.8468|
+|x|          4|         10|          3|    1605230.582|         40|00:43:11|-0.10|0.17|0.6484|
+|=|          5|         10|          3|    1284314.112|         50|00:26:52|-0.10|0.12|0.7231|
+|=|          6|         10|          3|    2008404.348|         60|00:45:29|-0.08|0.10|0.6021|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           3    mean value:     2008404.348
+Description of the best-so-far configuration:
+  .ID. population descendants probMutation probLsPop probLs probLsBest
+3    3         10           5         0.05       0.8    0.7        0.7
+  probLsBestP genIls genIlsa .PARENT.
+3         0.5     10  100000       NA
+
+# 2021-07-25 22:12:11 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   population descendants probMutation probLsPop probLs probLsBest probLsBestP
+3          10           5         0.05       0.8    0.7        0.7         0.5
+9          10          20         0.05       0.8    0.7        0.9         0.5
+7           5          10         0.05       0.6    0.9        0.5         0.7
+8          10          10         0.05       0.6    0.9        0.7         0.7
+10         10          10         0.05       0.6    0.7        0.9         0.7
+   genIls genIlsa
+3      10  100000
+9    1000   10000
+7    1000  100000
+8   10000  100000
+10  10000  100000
+# 2021-07-25 22:12:11 -03: Iteration 2 of 5
+# experimentsUsedSoFar: 60
+# remainingBudget: 240
+# currentBudget: 60
+# nbConfigurations: 12
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          7|         12|         14|    575.1953014|         12|00:32:40|   NA|  NA|    NA|
+|x|          1|         12|         13|    441615.5791|         19|00:31:25|+0.23|0.61|1.1229|
+|x|          3|         12|          7|    439980.0765|         26|00:29:36|+0.07|0.38|0.9727|
+|x|          4|         12|          7|    1707563.250|         33|00:35:15|+0.08|0.31|0.8700|
+|=|          6|         12|          7|    2491821.706|         40|00:35:43|+0.06|0.25|0.7053|
+|=|          5|         12|          7|    2076621.596|         47|00:20:49|+0.08|0.24|0.7628|
+|=|          2|         12|          7|    1780053.499|         54|00:21:06|+0.04|0.17|0.7840|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:           7    mean value:     1780053.499
+Description of the best-so-far configuration:
+  .ID. population descendants probMutation probLsPop probLs probLsBest
+7    7          5          10         0.05       0.6    0.9        0.5
+  probLsBestP genIls genIlsa .PARENT.
+7         0.7   1000  100000       NA
+
+# 2021-07-26 01:38:48 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   population descendants probMutation probLsPop probLs probLsBest probLsBestP
+7           5          10         0.05       0.6    0.9        0.5         0.7
+8          10          10         0.05       0.6    0.9        0.7         0.7
+16         10           5         0.05       0.6    0.7        0.5         0.9
+13         20           2          0.2       0.6    0.7        0.9         0.9
+14         10          10          0.1       0.8    0.5        0.9         0.5
+   genIls genIlsa
+7    1000  100000
+8   10000  100000
+16     10  100000
+13  10000 1000000
+14  10000  100000
+# 2021-07-26 01:38:48 -03: Iteration 3 of 5
+# experimentsUsedSoFar: 114
+# remainingBudget: 186
+# currentBudget: 62
+# nbConfigurations: 12
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          8|         12|         18|    519.0381400|         12|00:33:13|   NA|  NA|    NA|
+|x|          5|         12|         20|    569.2671179|         19|00:14:51|-0.36|0.32|1.3028|
+|x|          6|         12|         20|    1876664.688|         26|00:30:47|-0.26|0.16|1.0799|
+|x|          2|         12|         13|    1407664.309|         33|00:14:58|-0.17|0.12|1.0566|
+|=|          1|         12|         20|    1293061.127|         40|00:25:53|-0.13|0.10|0.9078|
+|=|          7|         12|         20|    1077653.708|         47|00:15:34|-0.08|0.10|0.9353|
+|=|          3|         12|         20|    989894.5406|         54|00:26:36|-0.06|0.09|0.8621|
+|=|          4|         12|         20|    1554946.819|         61|00:31:05|-0.05|0.08|0.8993|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          20    mean value:     1554946.819
+Description of the best-so-far configuration:
+   .ID. population descendants probMutation probLsPop probLs probLsBest
+20   20          5          10          0.1       0.8    0.9        0.9
+   probLsBestP genIls genIlsa .PARENT.
+20         0.9   1000  100000        7
+
+# 2021-07-26 04:51:48 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   population descendants probMutation probLsPop probLs probLsBest probLsBestP
+20          5          10          0.1       0.8    0.9        0.9         0.9
+19          5           5          0.1       0.2    0.7        0.5         0.9
+18         10           5         0.05       0.6    0.9        0.5         0.7
+16         10           5         0.05       0.6    0.7        0.5         0.9
+13         20           2          0.2       0.6    0.7        0.9         0.9
+   genIls genIlsa
+20   1000  100000
+19     10  100000
+18  10000  100000
+16     10  100000
+13  10000 1000000
+# 2021-07-26 04:51:48 -03: Iteration 4 of 5
+# experimentsUsedSoFar: 175
+# remainingBudget: 125
+# currentBudget: 62
+# nbConfigurations: 11
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          9|         11|         19|    214667.9489|         11|00:42:46|   NA|  NA|    NA|
+|x|          8|         11|         20|    265435.4150|         17|00:15:46|-0.58|0.21|1.1856|
+|x|          5|         11|         20|    177162.0563|         23|00:13:43|-0.21|0.19|0.9017|
+|x|          6|         11|         19|    1460289.669|         29|00:26:29|-0.08|0.19|0.9217|
+|=|          1|         11|         19|    1259986.201|         35|00:24:08|-0.02|0.18|0.9352|
+|=|          2|         11|         19|    1050095.802|         41|00:13:45|-0.05|0.12|0.9543|
+|=|          4|         11|         19|    1687269.655|         47|00:26:38|-0.05|0.10|0.9860|
+|=|          3|         11|         19|    1494967.156|         53|00:24:05|-0.01|0.11|0.9206|
+|=|          7|         11|         19|    1328930.562|         59|00:14:45|-0.00|0.11|0.9195|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          19    mean value:     1328930.562
+Description of the best-so-far configuration:
+   .ID. population descendants probMutation probLsPop probLs probLsBest
+19   19          5           5          0.1       0.2    0.7        0.5
+   probLsBestP genIls genIlsa .PARENT.
+19         0.9     10  100000       16
+
+# 2021-07-26 08:13:58 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   population descendants probMutation probLsPop probLs probLsBest probLsBestP
+19          5           5          0.1       0.2    0.7        0.5         0.9
+20          5          10          0.1       0.8    0.9        0.9         0.9
+26          5          10         0.05       0.6    0.9        0.9         0.7
+28          5          10          0.1       0.8    0.9        0.5         0.9
+18         10           5         0.05       0.6    0.9        0.5         0.7
+   genIls genIlsa
+19     10  100000
+20   1000  100000
+26   1000  100000
+28   1000  100000
+18  10000  100000
+# 2021-07-26 08:13:58 -03: Iteration 5 of 5
+# experimentsUsedSoFar: 234
+# remainingBudget: 66
+# currentBudget: 66
+# nbConfigurations: 11
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         10|         11|         28|    292440.0768|         11|00:43:28|   NA|  NA|    NA|
+|x|          8|         11|         18|    157424.1420|         17|00:17:39|+0.05|0.53|1.1380|
+|x|          6|         11|         18|    1981234.605|         23|00:26:49|-0.11|0.26|1.0953|
+|x|          2|         11|         28|    1480645.467|         29|00:14:02|-0.23|0.07|1.1494|
+|=|          3|         11|         19|    1276349.821|         35|00:23:15|-0.23|0.02|1.0344|
+|=|          9|         11|         19|    1099402.843|         41|00:22:59|-0.15|0.04|0.9308|
+|=|          5|         11|         19|    942435.3822|         47|00:12:51|-0.11|0.05|0.9281|
+|=|          4|         11|         19|    1513420.056|         53|00:25:37|-0.11|0.03|0.9513|
+|=|          7|         11|         20|    1410236.415|         59|00:13:17|-0.09|0.03|0.9523|
+|=|          1|         11|         19|    1256677.058|         65|00:23:15|-0.07|0.04|0.9221|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          19    mean value:     1256677.058
+Description of the best-so-far configuration:
+   .ID. population descendants probMutation probLsPop probLs probLsBest
+19   19          5           5          0.1       0.2    0.7        0.5
+   probLsBestP genIls genIlsa .PARENT.
+19         0.9     10  100000       16
+
+# 2021-07-26 11:57:15 -03: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   population descendants probMutation probLsPop probLs probLsBest probLsBestP
+19          5           5          0.1       0.2    0.7        0.5         0.9
+26          5          10         0.05       0.6    0.9        0.9         0.7
+28          5          10          0.1       0.8    0.9        0.5         0.9
+20          5          10          0.1       0.8    0.9        0.9         0.9
+34         30           5         0.05       0.6    0.7        0.5         0.7
+   genIls genIlsa
+19     10  100000
+26   1000  100000
+28   1000  100000
+20   1000  100000
+34   1000 1000000
+# 2021-07-26 11:57:15 -03: Stopped because there is not enough budget left to race more than the minimum (5)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 6
+# nbIterations: 6
+# experimentsUsedSoFar: 299
+# timeUsed: 0
+# remainingBudget: 1
+# currentBudget: 1
+# number of elites: 5
+# nbConfigurations: 4
+   .ID. population descendants probMutation probLsPop probLs probLsBest 
+19   19          5           5          0.1       0.2    0.7        0.5
+26   26          5          10         0.05       0.6    0.9        0.9
+28   28          5          10          0.1       0.8    0.9        0.5
+20   20          5          10          0.1       0.8    0.9        0.9
+34   34         30           5         0.05       0.6    0.7        0.5
+   probLsBestP genIls genIlsa .PARENT. .ALIVE. .RANK.   .WEIGHT.
+19         0.9     10  100000       16    TRUE   50.5 0.33333333
+26         0.7   1000  100000       18    TRUE   53.5 0.26666667
+28         0.9   1000  100000       20    TRUE   55.0 0.20000000
+20         0.9   1000  100000        7    TRUE   55.5 0.13333333
+34         0.7   1000 1000000       18    TRUE   58.5 0.06666667

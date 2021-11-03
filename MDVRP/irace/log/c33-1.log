@@ -1,0 +1,13 @@
+DEBUG:root:imprimindo args...........................
+DEBUG:root:Namespace(datfile='dat/c33-1.dat', desc=20, genIls=10, genIlsa=100000, instance='/media/fabiana/Dados/Documentos/Dropbox/ProjetoPesquisa-MDVRP/MDVRP-Fabiana/MDVRP/instances/p01', pop=30, probLs=0.5, probLsBest=0.9, probLsBestP=0.9, probLsPop=0.6, probMut=0.05, seed=623383339, verbose=True)
+DEBUG:root:seed: 623383339
+DEBUG:root:população: 30
+DEBUG:root:nDesc: 20
+DEBUG:root:probMut: 0.05
+DEBUG:root:probLsPop: 0.6
+DEBUG:root:probLs: 0.5
+DEBUG:root:probLsBest: 0.9
+DEBUG:root:probLsBestP: 0.9
+DEBUG:root:genIls: 10
+DEBUG:root:genIlsa: 100000
+DEBUG:root:instância: /media/fabiana/Dados/Documentos/Dropbox/ProjetoPesquisa-MDVRP/MDVRP-Fabiana/MDVRP/instances/p01

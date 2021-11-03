@@ -1,0 +1,6 @@
+#cache
+MDVRP/__pycache__/
+
+#configurações vscode
+.vscode/.ropeproject/
+MDVRP/dat/teste

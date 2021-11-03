@@ -1,0 +1,501 @@
+FRAC_MAX_DISTRIBUTION = 100
+SIZE_POP = 10  # população inicial
+SIZE_DESC = 6  # número de descendentes
+PROB_MUTATION = 0.05
+PROB_LS_POP = 0.2  # probabilidade de busca local na formação da população
+PROB_LS = 0.6  # probabilidade busca local
+PROB_LS_BEST = 0.8  # probabilidade busca local promotion
+PROB_LS_BEST_P = 0.9  # probabilidade busca local assíncrona
+GEN = 200  # número de gerações
+GEN_NO_EVOL = 30  # número permitido de gerações sem mudanças
+SP = 2  # pressão seletiva para linear ranking
+N_REPETITIONS = 10
+TIME_TOTAL = 3600  # 3600 tempo em segundos
+TIME_GEN = 360  # 360 tempo em segundos / tempo máximo em cada geracao
+TIME_POP = 60
+IT_ILS = 10
+GEN_ILS = 20
+IT_ILSA = 10000
+GEN_ILSA = 1000000
+
+# first improvement até 4 iteracao sem melhora
+
+
+gap médio: 11.672462362688155 
+ gap melhor: 8.532311296055136 
+ gap pior: 16.02387465214489 
+ custo médio: 644.2049336316392 
+ melhor custo: 626.0903441735533 
+ pior custo: 669.3069257058282 
+ tempo médio: 1.7514695703983307
+
+ #### first improvement até 10 iteracao sem melhora
+
+ gap médio: 9.73732070875103 
+ gap melhor: 5.2389936972257605 
+ gap pior: 13.05396222634689 
+ custo médio: 633.0416819725721 
+ melhor custo: 607.0921829411863 
+ pior custo: 652.1743918951273 
+ tempo médio: 2.5187714791297915
+
+# best improvement até 5 iteracao sem melhora
+
+
+ gap médio: 11.399172392607808 
+ gap melhor: 7.496100146451486 
+ gap pior: 13.477845066494115 
+ custo médio: 642.6284057812367 
+ melhor custo: 620.1127529148347 
+ pior custo: 654.6196448350846 
+ tempo médio: 2.3598550001780194
+
+ ###verificando sem 1 movimento
+
+ # first improvement até 10 iteracao sem melhora sem M1
+## 4
+
+ gap médio: 11.089056790101237 
+ gap melhor: 8.07118337407741 
+ gap pior: 14.9359691178719 
+ custo médio: 640.839441905057 
+ melhor custo: 623.4302355300404 
+ pior custo: 663.0311250502676 
+ tempo médio: 3.0248000061511995
+
+  # first improvement até 10 iteracao sem melhora sem M2
+  ## 3
+
+ ap médio: 11.279388667841458 
+ gap melhor: 8.281822006124283 
+ gap pior: 14.364263865595134 
+ custo médio: 641.937409408177 
+ melhor custo: 624.6453466067292 
+ pior custo: 659.7331289614586 
+ tempo médio: 2.7561406262715655
+
+# first improvement até 10 iteracao sem melhora sem M3
+## 7
+
+ gap médio: 10.834930783489789 
+ gap melhor: 7.1591062545448185 
+ gap pior: 14.797294998957975 
+ custo médio: 639.3734652107175 
+ melhor custo: 618.1687362505927 
+ pior custo: 662.2311556604889 
+ tempo médio: 2.3172772081693016
+
+ # first improvement até 10 iteracao sem melhora sem M4
+## 9
+ gap médio: 10.680780172413488 
+ gap melhor: 6.501521533022822 
+ gap pior: 13.16296757580971 
+ custo médio: 638.4842165806017 
+ melhor custo: 614.3753272675488 
+ pior custo: 652.8032110545735 
+ tempo médio: 2.4717009659608213
+
+  # first improvement até 10 iteracao sem melhora sem M5
+  ## 6
+
+ gap médio: 9.652509458040887 
+ gap melhor: 7.514079908012869 
+ gap pior: 13.217953426540385 
+ custo médio: 632.5524313106005 
+ melhor custo: 620.2164727653538 
+ pior custo: 653.1204079316835 
+ tempo médio: 2.592466187477112
+
+ # first improvement até 10 iteracao sem melhora sem M6
+## 10
+ gap médio: 10.724065529072572 
+ gap melhor: 4.5737111404935495 
+ gap pior: 14.91965897903446 
+ custo médio: 638.733916817561 
+ melhor custo: 603.2543674561651 
+ pior custo: 662.9370367523561 
+ tempo médio: 2.3098758931954704
+
+  # first improvement até 10 iteracao sem melhora sem M7
+##8
+ gap médio: 10.157671130044495 
+ gap melhor: 6.782186593550018 
+ gap pior: 16.55113500459768 
+ custo médio: 635.4665574478877 
+ melhor custo: 615.994399802212 
+ pior custo: 672.3485325010226 
+ tempo médio: 2.163369923035304
+
+# first improvement até 10 iteracao sem melhora sem M8
+## 2
+gap médio: 10.62314825191311 
+ gap melhor: 8.323577944776819 
+ gap pior: 14.121678545995534 
+ custo médio: 638.1517553208112 
+ melhor custo: 624.886224090034 
+ pior custo: 658.3337270282844 
+ tempo médio: 2.219520160754522
+
+ # first improvement até 10 iteracao sem melhora sem M9
+##1
+ gap médio: 11.633705334916215 
+ gap melhor: 9.091123732807569 
+ gap pior: 15.765605758282744 
+ custo médio: 643.9813559655312 
+ melhor custo: 629.313965477447 
+ pior custo: 667.8170499378057 
+ tempo médio: 1.894216458002726
+
+  # first improvement até 10 iteracao sem melhora sem M10
+## 5
+ gap médio: 10.43476169321212 
+ gap melhor: 7.571050392531411 
+ gap pior: 16.21314650008035 
+ custo médio: 637.0650097796328 
+ melhor custo: 620.545118399396 
+ pior custo: 670.3987782150135 
+ tempo médio: 2.2629363377889
+
+### M9 M8 M2 M1 M10 M5 M3 M7 M4 M6 (0.3, 0.2, 0.1, 0.1, 0.08, 0.05, 0.05, 0.05, 0.05, 0.02) (0.1, 0.1, 0.05, 0.05, 0.05, 0.02, 0.05, 0.2, 0.3, 0.08)
+
+ # first improvement até 10 iteracao sem melhora replace False nos movimentos
+
+ gap médio: 11.936903638894963 
+ gap melhor: 8.512891824883576 
+ gap pior: 18.477997896134063 
+ custo médio: 645.7304160216934 
+ melhor custo: 625.9783190702059 
+ pior custo: 683.4640264634286 
+ tempo médio: 2.3451276242733
+
+ # first improvement até 10 iteracao sem melhora replace False nos movimentos com p = (0.1, 0.1, 0.05, 0.05, 0.05, 0.02, 0.05, 0.2, 0.3, 0.08)
+
+ gap médio: 10.93959200420787 
+ gap melhor: 7.4343971672368685 
+ gap pior: 16.113732826175088 
+ custo médio: 639.977224394674 
+ melhor custo: 619.7568069386393 
+ pior custo: 669.8252905543562 
+ tempo médio: 2.0998247230052947
+
+ # first improvement até 10 iteracao sem melhora trocou M6 por M9
+
+ gap médio: 12.165511747508312 
+ gap melhor: 5.872921228208066 
+ gap pior: 15.001446691677838 
+ custo médio: 647.0491876178512 
+ melhor custo: 610.7491206891639 
+ pior custo: 663.408845530282 
+ tempo médio: 2.013197074731191
+
+ # first improvement até 10 iteracao sem melhora sem M1 e M2
+
+ gap médio: 10.80239961276042 
+ gap melhor: 6.313978619242272 
+ gap pior: 17.5119973970898 
+ custo médio: 639.185802646131 
+ melhor custo: 613.2934484608229 
+ pior custo: 677.8914593845919 
+ tempo médio: 2.15433796842893
+
+ # first improvement até 10 iteracao sem melhora sem M1 e M3
+
+ gap médio: 10.957593849954115 
+ gap melhor: 5.389660067076712 
+ gap pior: 15.409613002074243 
+ custo médio: 640.0810716422303 
+ melhor custo: 607.9613320289454 
+ pior custo: 665.7634345250657 
+ tempo médio: 2.264566508134206
+
+# first improvement até 10 iteracao sem melhora sem M1 e M4
+
+ gap médio: 9.838512913340782 
+ gap melhor: 6.290026103311782 
+ gap pior: 14.075117172793005 
+ custo médio: 633.625429443189 
+ melhor custo: 613.1552735821747 
+ pior custo: 658.065128434691 
+ tempo médio: 2.083731381893158
+
+ # first improvement até 10 iteracao sem melhora sem M1 e M5
+
+ gap médio: 10.646861651183078 
+ gap melhor: 5.6746622014220325 
+ gap pior: 15.73683153479028 
+ custo médio: 638.2885508071798 
+ melhor custo: 609.6054238413433 
+ pior custo: 667.6510600747447 
+ tempo médio: 2.495074452956518
+
+# first improvement até 10 iteracao sem melhora sem M1 e M6
+
+ gap médio: 11.299358419898839 
+ gap melhor: 8.386524230849254 
+ gap pior: 16.787024319249667 
+ custo médio: 642.0526089168704 
+ melhor custo: 625.2493423305001 
+ pior custo: 673.7093071904555 
+ tempo médio: 2.4019061736265823
+
+ # first improvement até 10 iteracao sem melhora sem M1 e M7
+
+ gap médio: 14.312456027346416 
+ gap melhor: 8.928235151140719 
+ gap pior: 19.8664165242982 
+ custo médio: 659.4342650849533 
+ melhor custo: 628.3743101163855 
+ pior custo: 691.473397003719 
+ tempo médio: 1.9513537736733753
+
+  # first improvement até 10 iteracao sem melhora sem M1 e M8
+
+ gap médio: 11.964775614680233 
+ gap melhor: 9.077576778205618 
+ gap pior: 16.840253159897927 
+ custo médio: 645.8912010884059 
+ melhor custo: 629.2358171604347 
+ pior custo: 674.0163684035032 
+ tempo médio: 2.065163503487905
+
+   # first improvement até 10 iteracao sem melhora sem M1 e M9
+
+ gap médio: 11.743462829599585 
+ gap melhor: 8.776774656916517 
+ gap pior: 14.955672330250124 
+ custo médio: 644.6145140251111 
+ melhor custo: 627.5005799633543 
+ pior custo: 663.1447869715139 
+ tempo médio: 1.9950666272640227
+
+  # first improvement até 10 iteracao sem melhora sem M1 e M10
+
+ gap médio: 10.535108503157321 
+ gap melhor: 7.36964575483074 
+ gap pior: 15.316903208038221 
+ custo médio: 637.6438804221636 
+ melhor custo: 619.3832754658921 
+ pior custo: 665.2286195362101 
+ tempo médio: 2.6805291255315145
+
+ # first improvement até 10 iteracao sem melhora sem M2 e M3
+
+ gap médio: 11.6990551015632 
+ gap melhor: 7.716772516063272 
+ gap pior: 15.317627460069277 
+ custo médio: 644.3583391643876 
+ melhor custo: 621.3857456134142 
+ pior custo: 665.2327975289016 
+ tempo médio: 2.459944164355596
+
+  # first improvement até 10 iteracao sem melhora sem M2 e M4
+
+ gap médio: 11.059006512191406 
+ gap melhor: 7.9724849581147215 
+ gap pior: 15.556793776694713 
+ custo médio: 640.6660908668786 
+ melhor custo: 622.8608739778764 
+ pior custo: 666.6124762596188 
+ tempo médio: 2.3788652237256365
+
+   # first improvement até 10 iteracao sem melhora sem M2 e M5
+
+ gap médio: 11.811933230677111 
+ gap melhor: 6.544300378591637 
+ gap pior: 18.261286851766137 
+ custo médio: 645.009499227807 
+ melhor custo: 614.6221055939816 
+ pior custo: 682.2138854617833 
+ tempo médio: 2.5049947329362228
+
+ # first improvement até 10 iteracao sem melhora sem M2 e M6
+
+ gap médio: 12.81477781049446 
+ gap melhor: 6.823559090736324 
+ gap pior: 17.571383212659725 
+ custo médio: 650.7946087553994 
+ melhor custo: 616.2330653267306 
+ pior custo: 678.2340383388702 
+ tempo médio: 2.471785620450974
+
+  # first improvement até 10 iteracao sem melhora sem M2 e M7
+
+ gap médio: 11.977880127881193 
+ gap melhor: 7.909925027793749 
+ gap pior: 16.143885838526185 
+ custo médio: 645.9667970937082 
+ melhor custo: 622.4999845078338 
+ pior custo: 669.999234236706 
+ tempo médio: 2.606415408452352
+
+   # first improvement até 10 iteracao sem melhora sem M2 e M8
+
+ gap médio: 9.863458709425906 
+ gap melhor: 6.924634180763785 
+ gap pior: 15.477687131840142 
+ custo médio: 633.7693342570652 
+ melhor custo: 616.816137198572 
+ pior custo: 666.1561337574462 
+ tempo médio: 3.3467841947078703
+
+    # first improvement até 10 iteracao sem melhora sem M2 e M9
+
+
+ gap médio: 12.489010923604841 
+ gap melhor: 7.922810435037182 
+ gap pior: 18.16405007387075 
+ custo médio: 648.9153573149993 
+ melhor custo: 622.574316556599 
+ pior custo: 681.6529556611382 
+ tempo médio: 2.3330888100465135
+
+ # first improvement até 10 iteracao sem melhora sem M2 e M10
+
+
+ gap médio: 12.559532711994128 
+ gap melhor: 8.520978100232615 
+ gap pior: 20.231783375016306 
+ custo médio: 649.3221763556805 
+ melhor custo: 626.0249663668119 
+ pior custo: 693.5810887554566 
+ tempo médio: 2.641459931135178
+
+ # first improvement até 10 iteracao sem melhora sem M3 e M4
+
+
+ gap médio: 12.357084773852263 
+ gap melhor: 9.689821705199194 
+ gap pior: 15.750772429540202 
+ custo médio: 648.1543149349216 
+ melhor custo: 632.7676744707826 
+ pior custo: 667.7314809142886 
+ tempo médio: 2.592441838582357
+
+ # first improvement até 10 iteracao sem melhora sem M3 e M5
+
+ gap médio: 9.765227948253154 
+ gap melhor: 6.305038722449785 
+ gap pior: 12.754703451053345 
+ custo médio: 633.202670465088 
+ melhor custo: 613.2418768781961 
+ pior custo: 650.4480577980914 
+ tempo médio: 2.95341470281283
+
+ # first improvement até 10 iteracao sem melhora sem M3 e M6
+
+ gap médio: 14.27234513657088 
+ gap melhor: 8.825418989822733 
+ gap pior: 17.433901076343773 
+ custo médio: 659.2028773893364 
+ melhor custo: 627.7811945265904 
+ pior custo: 677.4409451391043 
+ tempo médio: 2.422268614371618
+
+  # first improvement até 10 iteracao sem melhora sem M3 e M7
+
+ gap médio: 10.154553403948166 
+ gap melhor: 6.993312864371795 
+ gap pior: 13.741619564700317 
+ custo médio: 635.4485722213558 
+ melhor custo: 617.2123239207016 
+ pior custo: 656.1412807828867 
+ tempo médio: 2.845188711484274
+
+  # first improvement até 10 iteracao sem melhora sem M3 e M8
+
+ gap médio: 11.915999910672683 
+ gap melhor: 8.83356829771566 
+ gap pior: 16.52266317355507 
+ custo médio: 645.6098286846975 
+ melhor custo: 627.8282054390323 
+ pior custo: 672.1842870492871 
+ tempo médio: 3.064515764713287
+
+   # first improvement até 10 iteracao sem melhora sem M3 e M9
+
+ gap médio: 11.733716860472095 
+ gap melhor: 7.974992138882926 
+ gap pior: 16.51753696641995 
+ custo médio: 644.5582924530054 
+ melhor custo: 622.875337151574 
+ pior custo: 672.1547154981868 
+ tempo médio: 2.8040649286905923
+
+  # first improvement até 10 iteracao sem melhora sem M3 e M10
+
+ gap médio: 10.463406197163419 
+ gap melhor: 7.272293264163678 
+ gap pior: 13.569146956263111 
+ custo médio: 637.2302513295766 
+ melhor custo: 618.821678152981 
+ pior custo: 655.146338046595 
+ tempo médio: 2.9142869599660237
+
+ # first improvement até 10 iteracao sem melhora sem M4 e M5
+
+ gap médio: 10.60949193316964 
+ gap melhor: 7.728888312312732 
+ gap pior: 17.956996063387248 
+ custo médio: 638.0729761148757 
+ melhor custo: 621.4556380072385 
+ pior custo: 680.458523190862 
+ tempo médio: 2.8355950005849198
+
+  # first improvement até 10 iteracao sem melhora sem M4 e M6
+
+  gap médio: 10.660820204682631 
+ gap melhor: 5.3971360896109255 
+ gap pior: 15.88758954985976 
+ custo médio: 638.3690735147527 
+ melhor custo: 608.0044589601385 
+ pior custo: 668.520737836276 
+ tempo médio: 2.491222450335821
+
+   # first improvement até 10 iteracao sem melhora sem M4 e M7
+
+ gap médio: 12.124589926038878 
+ gap melhor: 9.317483248637505 
+ gap pior: 15.295656494831647 
+ custo médio: 646.8131219063405 
+ melhor custo: 630.6197656164152 
+ pior custo: 665.1060536217353 
+ tempo médio: 2.7410277160008745
+
+ # first improvement até 10 iteracao sem melhora sem M4 e M8
+
+ gap médio: 11.334763409164731 
+ gap melhor: 6.10898884037361 
+ gap pior: 15.437503619260587 
+ custo médio: 642.2568496784486 
+ melhor custo: 612.1109239234632 
+ pior custo: 665.9243271284286 
+ tempo médio: 2.335877299706141
+
+  # first improvement até 10 iteracao sem melhora sem M4 e M9
+
+  gap médio: 12.503332688263805
+ gap melhor: 8.541950702676731
+ gap pior: 19.119774998329213
+ custo médio: 648.9979752787874
+ melhor custo: 626.1459510185313
+ pior custo: 687.1662460328617
+ tempo médio: 2.8551402016480765
+
+   # first improvement até 10 iteracao sem melhora sem M4 e M10
+
+   gap médio: 12.1912199335994
+ gap melhor: 7.353179584593835
+ gap pior: 15.178741608384144
+ custo médio: 647.1974904309549
+ melhor custo: 619.2882870696465
+ pior custo: 664.4316067162856
+ tempo médio: 2.427475072542826
+
+ # first improvement até 10 iteracao sem melhora sem M5 e M6
+ gap médio: 13.20406392753558
+ gap melhor: 10.19629679537863
+ gap pior: 17.07792741276052
+ custo médio: 653.0402835787745
+ melhor custo: 635.6893773235007
+ pior custo: 675.3874398659916
+ tempo médio: 18.614342944224678

@@ -1,0 +1,141 @@
+FRAC_MAX_DISTRIBUTION = 100
+SIZE_POP = 5  # população inicial
+SIZE_DESC = 5  # número de descendentes
+PROB_MUTATION = 0.1
+PROB_LS_POP = 0.2  # probabilidade de busca local na formação da população
+PROB_LS = 0.7  # probabilidade busca local
+PROB_LS_BEST = 0.5  # probabilidade busca local promotion
+PROB_LS_BEST_P = 0.9  # probabilidade busca local assíncrona
+GEN = 200  # número de gerações
+GEN_NO_EVOL = 30  # número permitido de gerações sem mudanças
+SP = 2  # pressão seletiva para linear ranking
+N_REPETITIONS = 10
+TIME_TOTAL = 3600  # 3600 tempo em segundos
+TIME_GEN = 360  # 360 tempo em segundos / tempo máximo em cada geracao
+TIME_POP = 120
+IT_ILS = 10
+GEN_ILS = 10
+IT_ILSA = 10000
+GEN_ILSA = 100000
+
+
+#p01
+
+gap médio: 12.096092122067487 
+ gap melhor: 6.951882857828817 
+ gap pior: 15.55651757338848 
+ custo médio: 646.6487266245707 
+ melhor custo: 616.9733266419571 
+ pior custo: 666.610882925606
+ tempo médio: 1.4215404458840688
+
+
+ #p02
+
+ gap médio: 19.761069202388477 
+ gap melhor: 15.566694839127996 
+ gap pior: 25.122520766544117 
+ custo médio: 567.1045909940701 
+ melhor custo: 547.2429700717228 
+ pior custo: 592.4926725858163 
+ tempo médio: 1.367720179160436
+
+ #p03
+
+ gap médio: 14.856012438124033 
+ gap melhor: 10.794069071661516 
+ gap pior: 21.782981545401327 
+ custo médio: 736.4452661520075 
+ melhor custo: 710.4004914805865 
+ pior custo: 780.8602993709588 
+ tempo médio: 4.2996659847100585
+
+ #p04
+
+ gap médio: 29.780483125450967 
+ gap melhor: 21.30326660895666 
+ gap pior: 33.90632242976645 
+ custo médio: 1299.1545482790143 
+ melhor custo: 1214.2942200622997 
+ pior custo: 1340.455850050934 
+ tempo médio: 10.431672222216923
+
+ #p05
+
+ gap médio: 35.19823761981125 
+ gap melhor: 26.304443996891596 
+ gap pior: 50.00661338246181 
+ custo médio: 1014.0273416198703 
+ melhor custo: 947.321221309886 
+ pior custo: 1125.0946023524782 
+ tempo médio: 10.526502513488133
+
+ #p06
+
+ gap médio: 29.736706501367372 
+ gap melhor: 23.347003264654585 
+ gap pior: 35.11025373038837 
+ custo médio: 1137.142232484485 
+ melhor custo: 1081.1364836146975 
+ pior custo: 1184.241373946854 
+ tempo médio: 12.46943512916565
+
+ #p07
+
+ gap médio: 40.807327400806 
+ gap melhor: 26.79814813281324 
+ gap pior: 49.22274679649722 
+ custo médio: 1241.8783854768888 
+ melhor custo: 1118.321627086973 
+ pior custo: 1316.0998599210666 
+ tempo médio: 7.762193917830784
+
+ #p08
+
+ gap médio: 13748.919274369624 
+ gap melhor: 12128.174243719148 
+ gap pior: 17096.340152648077 
+ custo médio: 607604.714459838 
+ melhor custo: 536496.4711340852 
+ pior custo: 754468.7885892512 
+ tempo médio: 50.085487333933514
+
+ #p12
+
+ gap médio: 28.527789391765886 
+ gap melhor: 19.762300806369684 
+ gap pior: 33.36126854022939 
+ custo médio: 1695.2172781826962 
+ melhor custo: 1579.604866485613 
+ pior custo: 1758.9684514113555 
+ tempo médio: 4.771909434000651
+
+ #p15
+
+ gap médio: 38.52074769358054 
+ gap melhor: 29.57258840067197 
+ gap pior: 48.10799049974348 
+ custo médio: 3470.5265168645055 
+ melhor custo: 3246.337544308116 
+ pior custo: 3710.727215578673 
+ tempo médio: 26.39648922562599
+
+ #p18
+
+ gap médio: 42.238663411439404 
+ gap melhor: 31.196147761354798 
+ gap pior: 46.769120981596274 
+ custo médio: 5266.884348130484 
+ melhor custo: 4857.996557381326 
+ pior custo: 5434.640396267037 
+ tempo médio: 51.737632319927215
+
+ #p21
+ 
+gap médio: 53.59538242078282 
+ gap melhor: 42.548370194978325 
+ gap pior: 90.01785337797483 
+ custo médio: 8408.947839543565 
+ melhor custo: 7804.152642412556 
+ pior custo: 10402.98342602534 
+ tempo médio: 59.65261183579763
