@@ -8,7 +8,7 @@
 
 ## File that contains the description of the parameters of the target
 ## algorithm.
-# parameterFile = "./parameters.txt"
+parameterFile = "./parameters.txt"
 
 ## Directory where the programs will be run.
 # execDir = "./"
@@ -43,7 +43,7 @@ forbiddenFile = "./forbidden.txt"
 
 ## Script called for each configuration that executes the target algorithm
 ## to be tuned. See templates.
-# targetRunner = "./target-runner"
+targetRunner = "./target-runner.bat"
 
 ## Number of times to retry a call to targetRunner if the call failed.
 # targetRunnerRetries = 0
