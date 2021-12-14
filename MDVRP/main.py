@@ -109,6 +109,8 @@ def startGA(instance):
     # calcular gap
     print("gap médio: "+str(gap(nameInstance, mCost))+" \n gap melhor: "+str(gap(nameInstance, minor)) + " \n gap pior: " + str(gap(nameInstance, worst)) +
           " \n custo médio: "+str(mCost)+" \n melhor custo: "+str(minor) + " \n pior custo: "+str(worst)+" \n tempo médio: "+str(mTime)+"\n")
+    # needed to iRace
+    print(round(minor, 2), end="")
 
 
 def gap(nameInstance, cost):

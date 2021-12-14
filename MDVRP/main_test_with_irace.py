@@ -61,7 +61,7 @@ def main(SEED, POP, DESC, PROB_MUT, PROB_LS_POP, PROB_LS, PROB_LSB, PROB_LSBP, G
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(
         description='MDVRP com algoritmo genético')
-    print(ap)
+    #print(ap)
     ap.add_argument("-v", "--verbose",
                     help="aumentar verbosidade da saída", action="store_true")
     ap.add_argument('--seed', dest='seed', type=int,

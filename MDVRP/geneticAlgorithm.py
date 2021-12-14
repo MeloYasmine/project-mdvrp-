@@ -77,9 +77,15 @@ class GeneticAlgorithm:
                 children = []
 
                 if rand > 0.5:
-                    children = cross.OBX1(copy.deepcopy(P1), copy.deepcopy(P2))
+                    children = cross.OX2(copy.deepcopy(P1), copy.deepcopy(P2))
                 else:
-                    children = cross.PMX1(copy.deepcopy(P1), copy.deepcopy(P2))
+                    children = cross.OX2(copy.deepcopy(P1), copy.deepcopy(P2))
+
+                # print("Childrennnnnnnnnnnnnn \n")
+                # print(children)
+                # print("-----------------------------------------\n")
+                # exit()
+                    # children = cross.PMX1(copy.deepcopy(P1), copy.deepcopy(P2))
                 # print("children: \n")
                 # print(children)
                 # for a in range(2):
@@ -104,7 +110,8 @@ class GeneticAlgorithm:
                         except Exception as exc:
                             print('%s gerou uma exceção na busca local: %s' %
                                   (str(child), exc))
-
+                # print(modChildren)
+                
                 # split
                 # cluster = SplitDepots.splitByDepot(modChildren[0])
                 # print(cluster)

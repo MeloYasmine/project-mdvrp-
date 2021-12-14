@@ -1,5 +1,7 @@
+from numpy import random
 from customers import Customers as csts
 from solution import Solution
+from random import sample
 import numpy as np
 import copy
 
@@ -110,15 +112,123 @@ class Crossover:
 
         return positions
 
-    '''
-    https://files.cercomp.ufg.br/weby/up/498/o/SamuelWanbergLourencoNery2016.pdf
-    @param lista de clientes (individual1)
-    @param lista de clientes (individual2)
-    '''
+
+    # def OX1(individual1, individual2):
+    #     P1 = individual1.get_giantTour()
+    #     P2 = individual2.get_giantTour()
+    #     depots = [individual1.get_depots(), individual2.get_depots()]
+    #     P = [P1, P2]  # pais
+    #     child1 = []
+    #     child2 = []
+    #     dptChild = [[], []]
+    #     i = 0
+    #     j = 1
+    #     for i in range(len(P)):
+    #         child1[i] = P1[i]
+    #         child2[i] = P2[i]
+    #         dptChild[i] = copy.deepcopy(depots[i])
+    #         index = j + 1
+    #         city = P[j]
+    #         while( index != 1 ):
+    #             if(index > len(P[i%2+1])):
+    #                 index = 1
+    #             while(child1):
+    #                 aux = 1
+    #                 if(aux == len(P[i%2+1])):
+    #                     city = P1[1]
+    #                 else:
+    #                     city = P1[aux +1]
+    #             child1[index] = city
+    #             index = index + 1
+    #     return child1, child2
+
+
+
+
+            
+
+
+    def OX2(individual1, individual2):
+        P1 = individual1.get_giantTour()
+        P2 = individual2.get_giantTour()
+        depots = [individual1.get_depots(), individual2.get_depots()]
+        P = [P1, P2]  # pais
+        child1 = []
+        child2 = []
+        dptChild = [[], []]
+        C = [child1, child2]
+        for i in range(len(P)):
+            pos = sample(P[(i+1)%2], 3) 
+            print("Elementos sorteados")
+            print(pos)
+            #pos1 conjunto de índices aleatórios
+            C[i] = P[i].copy()
+            dptChild[i] = copy.deepcopy(depots[i])
+            # pos2 = []  #Posição equilavalente do valor que estou tirando de referencia de pos1
+            x = P[(i+1)%2].index(pos[0])
+            y = P[(i+1)%2].index(pos[1])
+            z = P[(i+1)%2].index(pos[2])
+            pos1 = [x, y, z]
+            print("valores de pos1")
+            print(pos1)
+            #pos1.sort()
+
+            pos2=[0,0,0]
+            print()
+            j=0
+            while(j < len(pos1)):                       
+                print(P[(i+1)%2][pos1[j]])
+                print(P[i])
+                print(pos2[j])
+                print("-------------")
+                pos2[j] = P[i].index(P[(i+1)%2][pos1[j]])
+                j += 1
+
+            pos2.sort()
+            j=0
+            # print(C)
+            # print(pos2)
+            # print(pos1)
+            while(j < len(pos2)):
+                print("Filho")
+                print(C[i])
+                print("Pai")
+                print(P[(i+1)%2])
+                print("Pos2")
+                print(pos2[j])
+                print("pos1")
+                print(pos1[j])
+                print("Filho na posição pos2" )
+                print(C[i][pos2[j]])
+
+                C[i][pos2[j]] = P[(i+1)%2][pos1[j]]
+                dptChild[i][pos2[j]] = depots[(i+1) % 2][pos1[j]]
+                print("Filho depois da troca")
+                print(C[i])
+                print("\n")
+                j = j+1
+
+            newIndividual1 = Solution()
+            newIndividual2 = Solution()
+            newIndividual1.set_depots(dptChild[0])
+            newIndividual1.set_giantTour(C[0])
+            newIndividual2.set_depots(dptChild[1])
+            newIndividual2.set_giantTour(C[1])
+            
+        return [newIndividual1, newIndividual2]
+
+            
+
+        '''
+        https://files.cercomp.ufg.br/weby/up/498/o/SamuelWanbergLourencoNery2016.pdf
+        @param lista de clientes (individual1)
+        @param lista de clientes (individual2)
+        '''
     def PMX(individual1, individual2):
         P1 = individual1.get_giantTour()
         P2 = individual2.get_giantTour()
         P = [P1, P2]  # pais
+        
         # print(P)
         # posição inicial a ser copiada de P1
         pos0 = np.random.randint(0, len(P1)-1)
